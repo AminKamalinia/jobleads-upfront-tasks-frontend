@@ -1,0 +1,122 @@
+@import "../../../scss/variables.scss";
+
+#mainSection {
+    padding: 47px;
+    background-image: url('../../../../assets/images/mood.jpg');
+    background-size: 100% 100%;
+
+    header {
+        margin-bottom: 25px;
+
+        img {
+            padding: 15px;
+            background-color: $logo-background-color;
+        }
+    }
+
+    #darkBackgroundSection,
+    #lightBackgroundSection {
+        padding: 25px;
+    }
+
+    #darkBackgroundSection {
+        color: $light-text-color;
+        background-color: $dark-background-color;
+
+        p {
+            margin-bottom: 0px;
+        }
+    }
+
+    #lightBackgroundSection {
+        color: $dark-text-color;
+        background-color: $light-background-color;
+
+        p {
+            margin-bottom: 0px;
+
+            img {
+                background-color: $light-background-color;
+            }
+        }
+
+        div {
+            &.justify-content-end {
+                height: 100%;
+            }
+        }
+
+        strong {
+            font-size: 35px;
+            font-family: FiraSans-SemiBold;
+        }
+
+        #priceTag {
+            margin-top: -10px;
+
+            small {
+                del {
+                    font-size: 17px;
+                    font-family: FiraSans-Medium;
+                }
+            }
+        }
+    }
+
+    button {
+        width: 100%;
+        border: none;
+        padding: 10px;
+        color: $button-text-color;
+        background-color: $button-background-color;
+        transition: font-size 1s ease;
+        -moz-transition: font-size 1s ease;
+        -webkit-transition: font-size 1s ease;
+        -o-transition: font-size 1s ease;
+
+        &:hover {
+            font-size: 18px;
+        }
+    }
+}
+
+footer {
+    margin-top: 10px;
+
+    p {
+        font-size: 12px;
+        color: $footer-text-color;
+    }
+}
+
+@media (max-width:992px) {
+    #mainSection {
+        padding: 0px;
+        background-size: auto;
+
+        .justify-content-end {
+            margin-right: 15px;
+        }
+
+        .row {
+            &:first-child {
+
+                section,
+                aside {
+                    padding-left: 0px;
+                    padding-right: 0px;
+                }
+            }
+        }
+
+        header {
+            margin-bottom: 0px;
+
+            img {
+                padding: 15px 45px;
+                width: 100%;
+                background-color: $logo-background-color-white;
+            }
+        }
+    }
+}

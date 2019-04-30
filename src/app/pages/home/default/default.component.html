@@ -1,0 +1,44 @@
+<section id="mainSection">
+    <div class="row">
+        <section class="col-lg-5">
+            <header>
+                <img src="../../../../assets/svg/logo_JL.svg" alt="logo_JL">
+            </header>
+            <section id="darkBackgroundSection">
+                <p>I don't know Germany language so I desided to write texts in English.</p>
+            </section>
+            <img class="img-fluid d-lg-none" alt="image" src="../../../../assets/images/mood.jpg">
+            <section id="lightBackgroundSection">
+                <p>
+                    <img src="../../../../assets/svg/arrow.svg" alt="arrow">
+                    I am fast learner person.
+                </p>
+                <p>
+                    <img src="../../../../assets/svg/arrow.svg" alt="arrow">
+                    I am good team player.
+                </p>
+                <hr>
+                <section>
+                    <div class="row">
+                        <aside class="col-4">
+                            <div class="row justify-content-end">
+                                <img src="../../../../assets/svg/arrowCircle.svg" alt="arrowCircle">
+                            </div>
+                        </aside>
+                        <section class="col-8">
+                            <p><strong>EUR 79,40</strong></p>
+                            <p id="priceTag"><small><del>EUR 13,23 pro Monat</del></small></p>
+                        </section>
+                    </div>
+                </section>
+            </section>
+            <button (click)="loadMoreInformation()">For more information please click</button>
+        </section>
+        <aside class="col-lg-7">
+            <app-more-information [display]="display" (onClouseClicked)="closeMoreInformation()"></app-more-information>
+        </aside>
+    </div>
+</section>
+<footer class="text-center">
+    <p>© JobLeads GmbH - Alle Rechte vorbehalten</p>
+</footer>

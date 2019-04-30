@@ -1,0 +1,47 @@
+@import "../../scss/variables.scss";
+
+#moreInformationSection {
+    opacity: 0.9;
+    padding: 25px;
+    color: $dark-text-color;
+    background-color: $light-background-color;
+
+    position: absolute;
+    top: -48px;
+    right: -33px;
+    width: 82%;
+
+    header {
+        font-family: FiraSans-Medium;
+    }
+
+    p {
+        font-family: FiraSans-Regular;
+        font-size: 13px;
+    }
+
+    img {
+        position: absolute;
+        top: 10px;
+        right: 25px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+@media (max-width:992px) {
+    #moreInformationSection {
+        padding: 10px;
+        position: relative;
+        top: auto;
+        right: auto;
+        width: 100%;
+        background-color: $more-information-background-color-white;
+
+        img {
+            right: 10px;
+        }
+    }
+}

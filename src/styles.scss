@@ -1,1 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: 'FiraSans-SemiBold';
+    src: url('./assets/fonts/FiraSans-SemiBold.eot');
+    src: url('./assets/fonts/FiraSans-SemiBold.woff') format('woff'),
+        url('./assets/fonts/FiraSans-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FiraSans-Medium';
+    src: url('./assets/fonts/FiraSans-Medium.eot');
+    src: url('./assets/fonts/FiraSans-Medium.woff') format('woff'),
+        url('./assets/fonts/FiraSans-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FiraSans-Regular';
+    src: url('./assets/fonts/FiraSans-Regular.eot');
+    src: url('./assets/fonts/FiraSans-Regular.woff') format('woff'),
+        url('./assets/fonts/FiraSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+p,
+header,
+footer,
+div,
+section,
+article {
+    font-family: FiraSans-Regular;
+}
